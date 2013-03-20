@@ -1,0 +1,977 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"conte",
+				"content-wrap"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"act",
+				"active"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"bot",
+				"bot	CSS - bottom: 0;"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"instructo",
+				"instructor-info"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"con",
+				"con	CSS - content: '';"
+			],
+			[
+				"bef",
+				"before"
+			],
+			[
+				"si",
+				"site_url"
+			],
+			[
+				"e",
+				"e7e7e7"
+			],
+			[
+				"sh",
+				"box-shadow"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"s",
+				"summary"
+			],
+			[
+				"cou",
+				"course_name"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"it",
+				"italic"
+			],
+			[
+				"rig",
+				"right-column"
+			],
+			[
+				"af",
+				"after"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"ri",
+				"rig	CSS - right: 0;"
+			],
+			[
+				"abs",
+				"absolute"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"tes",
+				"testmonial-body"
+			],
+			[
+				"sli",
+				"slide-discription"
+			],
+			[
+				"if",
+				"if	if …"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"baco",
+				"background-color"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"coun",
+				"country_code"
+			],
+			[
+				"near",
+				"nearby"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"php",
+				"php	php-block"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"trans",
+				"transition	CSS - transition: ;"
+			],
+			[
+				"ho",
+				"hover"
+			],
+			[
+				"imo",
+				"important"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"ph",
+				"php	php-block"
+			],
+			[
+				"regsid",
+				"registersidebar	Register Sidebar"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"getbloifo",
+				"get_bloginfo"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"hid",
+				"hidden"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"our",
+				"our-services"
+			],
+			[
+				"other",
+				"other-follow"
+			],
+			[
+				"d",
+				"disc"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"getexc",
+				"get_the_excerpt"
+			],
+			[
+				"log",
+				"login_url"
+			],
+			[
+				"is_log",
+				"is_user_logged_in"
+			],
+			[
+				"digi",
+				"digital-speakers"
+			],
+			[
+				"all",
+				"all-stories"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"ob_cle",
+				"ob_end_clean"
+			],
+			[
+				"admin",
+				"admin_email"
+			],
+			[
+				"clie",
+				"client_email"
+			],
+			[
+				"cli",
+				"client_number"
+			],
+			[
+				"clien",
+				"client_website"
+			],
+			[
+				"updatue",
+				"update_user_meta"
+			],
+			[
+				"funn",
+				"function"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"dosh",
+				"do_shortcode"
+			],
+			[
+				"most",
+				"most_recent_post"
+			],
+			[
+				"commentp",
+				"comments_popup_link"
+			],
+			[
+				"post-",
+				"post-thumb"
+			],
+			[
+				"sha",
+				"share-buttons"
+			],
+			[
+				"theautlin",
+				"the_author_posts_link"
+			],
+			[
+				"theautpo",
+				"the_author_posts_link"
+			],
+			[
+				"echo",
+				"echo"
+			],
+			[
+				"gethe",
+				"get_header"
+			],
+			[
+				"rgsidb",
+				"register_sidebar"
+			],
+			[
+				"rgsid",
+				"register_sidebars"
+			],
+			[
+				"regme",
+				"register_nav_menus"
+			],
+			[
+				"post",
+				"post-title"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"TI",
+				"title	Tag"
+			],
+			[
+				"HE",
+				"head	Tag"
+			],
+			[
+				"mr",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"nexlin",
+				"next_posts_link"
+			],
+			[
+				"preposli",
+				"previous_posts_link"
+			],
+			[
+				"the_author_pos",
+				"the_author_posts_link"
+			],
+			[
+				"_",
+				"__"
+			],
+			[
+				"fun",
+				"function_exists"
+			],
+			[
+				"add_th",
+				"add_theme_support"
+			],
+			[
+				"styl",
+				"wp_style_is"
+			],
+			[
+				"p",
+				"padding-right"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"textwidget"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"sco",
+				"scroll"
+			],
+			[
+				"app",
+				"app-name"
+			],
+			[
+				"nor",
+				"no-repeat"
+			],
+			[
+				"met",
+				"meta	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Start Docblock"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"snipp",
+				"Snippet: class-attribute"
+			],
+			[
+				"pick",
+				"Color picker"
+			],
+			[
+				"Snippet: se",
+				"Snippet: CSS-Section"
+			],
+			[
+				"snippet",
+				"Snippet: CSS-rule"
+			],
+			[
+				"sav",
+				"Project: Save As"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ad",
+				"Project: Add Folder"
+			],
+			[
+				"wp",
+				"WordPress Codex: Search Selection"
+			],
+			[
+				"wor",
+				"WordPress Codex: Search Selection"
+			],
+			[
+				"synphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"syntaphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"packa",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"wo",
+				"WordPress Codex: Search Selection"
+			],
+			[
+				"wordpress",
+				"WordPress Codex: Search Selection"
+			],
+			[
+				"complete",
+				"Snippet: WP Config (complete)"
+			],
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"minma",
+				"View: Toggle Minimap"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"minima",
+				"View: Toggle Minimap"
+			],
+			[
+				"si b",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ahmad/www/huda-demo/_modules/_courselistCurrent.php",
+		"/home/ahmad/www/huda-demo/less/bootstrap.css",
+		"/home/ahmad/www/huda-demo/css/bootstrap.css",
+		"/home/ahmad/www/huda-demo/_modules/singleLessonPage.php",
+		"/home/ahmad/www/huda-demo/_modules/homepage.php",
+		"/home/ahmad/www/huda-demo/header.php",
+		"/home/ahmad/www/huda-demo/footer.php",
+		"/home/ahmad/www/huda-demo/_modules/upload.php",
+		"/home/ahmad/www/huda-demo/video.php",
+		"/home/ahmad/www/huda-demo/_modules/singleCourse.php",
+		"/home/ahmad/www/huda-demo/_modules/homepage_.php",
+		"/home/ahmad/www/huda-demo/message/index.php",
+		"/home/ahmad/www/huda-demo/content.php",
+		"/home/ahmad/www/huda-demo/_modules/dashboard.php",
+		"/home/ahmad/www/huda-demo/_modules/_about.php",
+		"/home/ahmad/Documents/test.csv",
+		"/home/ahmad/www/huda-demo/functions.php",
+		"/home/ahmad/www/huda-demo/functions_.php",
+		"/home/ahmad/www/huda-demo/_modules/login_page.php",
+		"/home/ahmad/www/huda-demo/_modules/forget_password.php",
+		"/home/ahmad/www/huda-demo/exams/index.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistMembers.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistMoreCoursesMembers.php",
+		"/home/ahmad/www/new-huda/_modules/dashboard.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistPaid.php",
+		"/home/ahmad/www/huda-demo/_modules/courseListPage.php",
+		"/home/ahmad/www/huda-demo/generate_certificate.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistComplete.php",
+		"/home/ahmad/www/new-huda/style.css",
+		"/home/ahmad/www/new-huda/_modules/z-dashboard.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistCurrentFree.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistFreeMembersDash.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistEpisodes.php",
+		"/home/ahmad/www/huda-demo/_modules/_courselistMoreCourses.php",
+		"/home/ahmad/www/huda-demo/style.css",
+		"/home/ahmad/www/huda-demo/_modules/_changePassword.php",
+		"/home/ahmad/www/huda-demo/_modules/_testimonialsCourse.php",
+		"/home/ahmad/www/huda-demo/_modules/_contact.php",
+		"/home/ahmad/www/huda-demo/_modules/_testimonials.php",
+		"/home/ahmad/www/huda-demo/facebook-connect.php",
+		"/home/ahmad/www/huda-demo/logout.php",
+		"/home/ahmad/www/huda-demo/z-functions_.php",
+		"/media/STORE N GO/facebook/functions_.php",
+		"/home/ahmad/www/huda-demo/_modules/genContent.php",
+		"/home/ahmad/www/huda-demo/index.php",
+		"/home/ahmad/www/new-huda/facebook-php-sdk/examples/example.php",
+		"/home/ahmad/www/huda-demo/Connections/autoMate.php",
+		"/home/ahmad/www/new-huda/footer.php",
+		"/home/ahmad/www/new-huda/_modules/temp.html",
+		"/home/ahmad/www/new-huda/_modules/_courselistCurrent.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistMembers.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistCurrentFree.php",
+		"/home/ahmad/www/embedly.html",
+		"//etc/passwd",
+		"//etc/group",
+		"/home/ahmad/www/new-huda/_modules/forbidden_msg.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistFreeMembers.php",
+		"/home/ahmad/www/new-huda/content.php",
+		"/home/ahmad/www/new-huda/header.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistEpisodes.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistEpisodesMembers.php",
+		"/home/ahmad/www/new-huda/_modules/singleLessonPage.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistMoreCoursesMembers.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistFreeMembersDash.php",
+		"/home/ahmad/www/huda/new_design/html-css/about.php",
+		"/home/ahmad/www/new-huda/generate_certificate.php",
+		"/home/ahmad/www/huda/new_design/html-css/single.php",
+		"/home/ahmad/www/huda/new_design/html-css/index.php",
+		"/home/ahmad/www/huda/new_design/html-css/header.php",
+		"/home/ahmad/www/huda/new_design/html-css/functions.php",
+		"/home/ahmad/Desktop/new-huda/_modules/dashboard.php",
+		"/home/ahmad/www/new-huda/_modules/_courselistFreeList.php",
+		"/home/ahmad/Desktop/new-huda/_modules/_courselistEpisodes.php",
+		"/home/ahmad/Desktop/new-huda/style.css",
+		"/home/ahmad/www/new-huda/_modules/z-singleLessonPage.php",
+		"/home/ahmad/www/new-huda/_modules/singleCourse.php",
+		"/home/ahmad/www/new-huda/functions.php",
+		"/home/ahmad/www/new-huda/facebook-connect.php",
+		"/home/ahmad/www/new-huda/logout.php",
+		"/home/ahmad/www/new-huda/_modules/homepage.php",
+		"/home/ahmad/www/new-huda/_modules/_register.php",
+		"/home/ahmad/www/new-huda/fbindex.php",
+		"/home/ahmad/www/new-huda/_modules/_about.php",
+		"/home/ahmad/www/new-huda/facebook-php-sdk/src/base_facebook.php",
+		"/home/ahmad/www/new-huda/facebook-php-sdk-master/examples/example.php",
+		"/home/ahmad/www/new-huda/_modules/sponsorship.php",
+		"/home/ahmad/www/new-huda/_modules/courseListPage.php",
+		"/home/ahmad/www/huda/sponsor.html",
+		"/home/ahmad/www/new-huda/_modules/scholraship.php",
+		"/home/ahmad/Downloads/style.css",
+		"/home/ahmad/Downloads/Arctext/css/style.css",
+		"/home/ahmad/www/new-huda/_modules/_contact.php",
+		"/home/ahmad/www/new-huda/_modules/_student.php",
+		"/home/ahmad/www/new-huda/_modules/_testimonialsCourse.php",
+		"/home/ahmad/www/new-huda/_modules/_testimonials.php",
+		"/home/ahmad/www/new-huda/_modules/_courselist.php",
+		"/home/ahmad/www/new-huda/Connections/autoMate.php",
+		"/home/ahmad/www/new-huda/_modules/genContent.php",
+		"/home/ahmad/www/new-huda/index.php",
+		"/home/ahmad/www/new-huda/_modules/courseList.php",
+		"/home/ahmad/www/new-huda/slider/index.html",
+		"/home/ahmad/www/huda/new_design/html-css/style.css",
+		"/home/ahmad/www/huda/new_design/html-css/fpdf17/tutorial/calligra.php",
+		"/home/ahmad/www/huda/new_design/html-css/footer.php",
+		"/home/ahmad/www/huda/index.php",
+		"/home/ahmad/www/huda/_modules/_mainSite.php",
+		"/home/ahmad/www/huda/_modules/_testimonials.php",
+		"/home/ahmad/www/huda/_modules/_middle.php",
+		"/home/ahmad/www/huda/_modules/_menu.php",
+		"/home/ahmad/www/huda/_modules/_login.php",
+		"/home/ahmad/www/huda/new_design/html-css/fpdf17/tutorial/tuto2.php",
+		"/home/ahmad/www/huda/new_design/html-css/fpdf17/fpdf.php",
+		"/home/ahmad/www/huda/new_design/html-css/fpdf17/tutorial/tuto1.php",
+		"/home/ahmad/www/huda/new_design/html-css/fpdf17/fpdf.css",
+		"/home/ahmad/www/asas/html-css/index.html",
+		"/home/ahmad/www/huda/new_design/CircularContentCarousel/index.html",
+		"/home/ahmad/www/huda/new_design/html-css/less/variables.less",
+		"/home/ahmad/www/huda/new_design/html-css/Connections/autoMateServer.php",
+		"/home/ahmad/www/huda/Connections/autoMate.php",
+		"/home/ahmad/www/huda/_modules/_courselist.php",
+		"/home/ahmad/www/huda/_registerStudent_.php",
+		"/home/ahmad/www/huda/new_design/html-css/geoplugin.class/index.php",
+		"/home/ahmad/www/huda/new_design/html-css/geoplugin.class/geoplugin.class.php",
+		"/home/ahmad/www/huda/new_design/html-css/index.html",
+		"/home/ahmad/www/huda/new_design/html-css/redirects/arabic_order.php",
+		"/home/ahmad/www/huda/new_design/html-css/redirects/english_order.php",
+		"/home/ahmad/www/huda/new_design/html-css/redirects/index.php",
+		"/home/ahmad/www/huda/new_design/html-css/redirect.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"width",
+			"68",
+			"color",
+			"999",
+			"bar",
+			"user-name",
+			"stage-wrap",
+			"connection",
+			"fp",
+			"uploadedfile",
+			"../upload/",
+			"login-page",
+			"home",
+			"small",
+			"extra",
+			"3",
+			"login-p",
+			"watch",
+			"dashboard",
+			"160",
+			"167p",
+			"prev",
+			"prv",
+			"next",
+			"SetTextColor",
+			"recomm",
+			"<h4 class=\"current\">",
+			"course-box",
+			".right-column ",
+			".testmonials",
+			".right-column ",
+			"testmonials",
+			"lessons",
+			".right-column ",
+			"video-thumbnails",
+			"page-",
+			"page-wrap",
+			"instructor-info",
+			".right-column h1",
+			"free-courses-title",
+			"face",
+			"adsfads",
+			"enroll",
+			"header",
+			"250",
+			"dashb",
+			"$user",
+			"submi",
+			"$user",
+			"about",
+			"Message from Huda Academy",
+			"p",
+			"5",
+			"login",
+			"wrap",
+			".stage-wrap",
+			"4",
+			"h6>",
+			"<h6",
+			"<h6>",
+			"button",
+			"small",
+			"free-lesson",
+			"left",
+			"free",
+			"h3",
+			"3",
+			"enroll",
+			"disabled",
+			"button",
+			"p",
+			".course-list-page",
+			".instructor-info",
+			"disabled-links",
+			"=\"#\"",
+			"10",
+			".course-list-page .course-box .lessons > ol li",
+			".course-list-page.dashboard .course-box",
+			"15px",
+			"span",
+			"dash",
+			".course-box .lessons >",
+			"less",
+			"span3",
+			"$user",
+			"$user ",
+			"$user",
+			"{Your App ID}",
+			"h1",
+			"{Your App ID}",
+			"spon",
+			"<small>Price: $49 - Click below to sponsor Abu</small>",
+			"\n                    ",
+			"                        <small>Price: $49 - Click below to sponsor Abu</small>\n",
+			"<small>Price: $49 - Click below to sponsor Abu</small>",
+			"less",
+			"lesson",
+			"screen-icon.png",
+			"<input ",
+			"for\"",
+			"last_name",
+			"for\"last_name",
+			"for\"",
+			"scolarship",
+			"scholraship",
+			"\"name",
+			"name\"",
+			"app",
+			"span5",
+			"box ",
+			"box",
+			"type=\"text\"",
+			"type=\"text\" ",
+			"type=\"text\"",
+			"completed-courses",
+			"Paid",
+			"paid",
+			"free",
+			"Free",
+			"h6",
+			"<span class=\"watch-link\"><a href=\"#\">Watch Now</a></span>",
+			"\n                    ",
+			"><span class=\"watch-link\"><a href=\"#\">Watch Now</a></span>\n",
+			"<span class=\"watch-link\"><a href=\"#\">Watch Now</a></span>",
+			"span6 course-box",
+			"tab-pane row",
+			"newest",
+			"Newest"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 148.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"s",
+				"/home/ahmad/www/DIY1/css/style.css"
+			],
+			[
+				"ma",
+				"/media/ALFA_/Learning/wordpress/Building WordPress Theme From Scratch/wordpress-from-scratch/HTML/css/master.css"
+			],
+			[
+				"stylcss",
+				"site_media/style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/ahmad/www/gisics/gisics.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 272.0,
+	"status_bar_visible": true
+}
