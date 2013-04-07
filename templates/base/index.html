@@ -1,0 +1,178 @@
+{% block header %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+    	{% block title %}Muslim Media ● {% endblock title %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}base/style.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- <link href="./css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/mediaelementplayer.min.css" />
+    <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ STATIC_URL }}ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="{{ STATIC_URL }}sm2/js/soundmanager2.js"></script>
+  </head>
+  <body>
+    <!-- header start -->
+  	{% if user.is_authenticated %}
+    <div id="header-wrap" class="logged-in">
+      <div class="header container">
+        <div class="row">
+          <div class="brand span4">
+            <a href="{% url 'front_page' %}">
+              <h1 class="top-logo"></h1>
+            </a>
+          </div>
+          <div class="controls span8">
+            <div class="user-links">
+              <ul class="inline">
+                <!-- <li>
+                  <form class="form-search header-search">
+                    <div class="input-append">
+                      <input type="text" class="input-xlarge search-query">
+                      <button type="submit" class="btn btn-success">Search</button>
+                    </div>
+                  </form>
+                </li> -->
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-list"></i> Categories</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                    <li><a href="#" tabindex="-1">Category name</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle settings-link" data-toggle="dropdown" href="#"><i class="icon-user"></i> {{ user.email }} | {{ user.username }}</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" tabindex="-1">Profile</a></li>
+                    <li><a href="#" tabindex="-1">User Link</a></li>
+                    <li><a href="#" tabindex="-1">User Link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="{% url 'logout_person' %}" tabindex="-1">Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of header -->
+
+    <!-- page content start -->
+    <div id="page-wrap" class="logged-in">
+    {% else %}
+    <div id="header-wrap" class="logged-out">
+      <div class="header container">
+        <div class="row">
+          <div class="brand span3">
+            <a href="{% url 'front_page' %}">
+              <h1 class="top-logo"></h1>
+            </a>
+          </div>
+          <div class="controls span9">
+            <div class="sign-in">
+              <form class="form-inline pull-right" name="loginform" id="loginform" action="{% url 'login_person' %}" method="post">{% csrf_token %}
+                <!-- <input type="text" placeholder="User Name" tabindex="10" name="log" id="user_login">
+                <input type="password" placeholder="password" tabindex="20" name="pwd" id="user_pass"> -->
+                {{ login_form.username }}
+                {{ login_form.password }}
+                <input type="submit" class="btn btn-success" value="Sign in" tabindex="40" name="submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of header -->
+
+    <!-- page content start -->
+    <div id="page-wrap" class="logged-out">
+    {% endif %}
+{% endblock header %}
+
+{% if messages %}
+  {% block alerts_board %}
+    {% for message in messages %}
+      <div class="container alert {% if message.tags %} alert-{{ message.tags }} {% endif %}">
+        {{ message|safe }}
+      </div>
+    {% endfor %}
+  {% endblock alerts_board %}
+{% endif %}
+
+{% block content %}
+
+{% endblock content %}
+
+{% block footer %}
+</div>
+    <!-- End of page content -->
+
+    <!-- footer start -->
+    <div id="footer-wrap">
+      <div class="container">
+      <p class="copy-wrights">all rights reserved</p>
+      </div>
+    </div>
+    <!-- End of footer -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <!--
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+   -->
+    <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <script src="{{ STATIC_URL }}js/holder/holder.js"></script>
+    <script src="{{ STATIC_URL }}js/mediaelement-and-player.min.js"></script>
+    <script src="http://scripts.embed.ly/jquery.embedly.min.js"></script>
+    <script type="text/javascript">
+      $('document').ready(function(){
+        $('#media-player').embedly({
+          maxWidth: 660,
+          // maxheight: 100,
+          wmode: 'transparent',
+          key:':a1a2ff1e46d240f0a11c24b66138e0bf'
+        });
+        soundManager.setup({
+          url: '{{ STATIC_URL }}sm2/swfs/',
+          flashVersion: 9,
+          onready: function() {
+            // console.log('SM2 ready!');
+          },
+          ontimeout: function() {
+            // console.log('SM2 init failed!');
+          },
+          defaultOptions: {
+            // set global default volume for all sound objects
+            volume: 33
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+{% endblock footer %}

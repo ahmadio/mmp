@@ -1,0 +1,127 @@
+{% extends "base/index.html" %}
+
+{% block content %}
+<!-- page display for logged in users -->
+{% if user.is_authenticated %}
+<div id="content-wrap" class="content-wrap">
+	<div class="content container">
+		<div class="section-strip video-stream">
+			<h1 class="sec-title">Video section</h1>
+			{% include 'items/video_stream_box.html' %}
+		</div>
+		<div class="section-strip audio-stream">
+			<h1 class="sec-title">Audio section</h1>
+			{% include 'items/audio_stream_box.html' %}
+		</div>
+		<div class="section-strip doc-stream">
+			<h1 class="sec-title">doc section</h1>
+			{% include 'items/doc_stream_box.html' %}
+		</div>
+	</div>
+</div>
+{% else %}
+<div class="stage-wrap">
+	<div class="stage container">
+		<div class="row">
+			<div class="video-box-wrap span7">
+				<div class="video-box">
+					<!-- <img src="holder.js/520x300"> -->
+				</div>
+			</div>
+			<div class="opt-in-wrap span5">
+				<div>
+					<h2 class="welcome">Welcome to</h2>
+					<h2 class="muslim-media">Muslim Media</h2>
+					<p class="opt-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<a class="sign-up-btn btn btn-large btn-success span4" href="">Sign Up NOW!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content-wrap" class="content-wrap">
+	<div class="content container">
+		<div class="row">
+			<div class="features span6">
+				<h1 class="sec-title">Features</h1>
+				<h2 class="sub-sec-title">Originals</h2>
+				<ul class="inline features-list clearfix">
+					<li class="span5 clearfix">
+						<span class="feature-img feature-quran"><img src="{{ STATIC_URL }}img/quran.png"></span>
+						<div class="feature-summary">
+							<h3>Feature name</h3>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor</small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-hadeith"><img src="{{ STATIC_URL }}img/hadeith.png"></span>
+						<div class="feature-summary">
+							<h3>Feature name</h3>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor</small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-courses"><img src="{{ STATIC_URL }}img/courses.png"></span>
+						<div class="feature-summary">
+							<h3>Feature name</h3>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor</small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/nasheeds.png"></span>
+						<div class="feature-summary">
+							<h3>Feature name</h3>
+							<small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor</small>
+						</div>
+					</li>
+					<li class="span5">
+						<a class="more-features-link" href="#">
+							<p class="more-features">And more</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mini-stream-wrap span6">
+				<h1 class="sec-title">New Media</h1>
+				<div class="mini-stream">
+					<ul class="inline clearfix">
+						<li class="span5">
+							<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/audio.png"></span>
+							<p>Sorat Alkahf for abo bakr el shatery</p>
+						</li>
+						<li class="span5">
+							<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/video.png"></span>
+							<p>Sorat Alkahf for abo bakr el shatery</p>
+						</li>
+						<li class="span5">
+							<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/article.png"></span>
+							<p>Sorat Alkahf for abo bakr el shatery</p>
+						</li>
+						<li class="span5">
+							<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/video.png"></span>
+							<p>Sorat Alkahf for abo bakr el shatery</p>
+						</li>
+						<li class="span5">
+							<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/article.png"></span>
+							<p>Sorat Alkahf for abo bakr el shatery</p>
+						</li>
+						<button class="btn btn-mini more-media-btn">See More...</button>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endblock content %}
+
+<h1>you are here {{ location }}</h1>
+<!-- {% debug %} -->
+<img src="{{ STATIC_URL }}img/pg.jpg">

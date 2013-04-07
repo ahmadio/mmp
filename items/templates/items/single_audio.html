@@ -1,0 +1,100 @@
+{% extends 'base/index.html' %}
+
+{% block content %}
+<div id="content-wrap" class="content-wrap single audio">
+	<div class="content container">
+		<div class="row">
+			<div class="post span8">
+				<h1 class="post-title">{{ single_audio.title }}</h1>
+				<div id="media-player" class="audio-player-wrap">
+					<!-- <img src="holder.js/660x100/text:Audio Player"> -->
+					<audio controls>
+  						<source src="'.$media_url.'" type="audio/mp3">
+						Your browser does not support the audio element.
+					</audio>
+					<div class="ui360">
+						<a href="/path/to/an.mp3">play "an.mp3"</a>
+					</div>
+				</div>
+				<div class="related-items">
+					<h4>Related audios</h4>
+					<ul class="thumbnails">
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="artist-items">
+					<h4>Other audios for artist</h4>
+					<ul class="thumbnails">
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="side span4">
+				<h2 class="post-title">{{ single_audio.title }}</h2>
+				<div class="description">
+					<p>{{ single_audio.description }}</p>
+				</div>
+				<div class="author-meta clearfix">
+							<div class="author-avatar-wrap pull-left">
+								<a href="">
+									<img class="person-avatar-mini-thumb" src="holder.js/30x30/social/text:avatar" alt="" width="30" height="30"/>
+								</a>
+							</div>
+							<div class="pull-left">
+								<!-- <span>by</span> -->
+								<a href=""><strong>{{ single_audio.author.username }}</strong></a>
+								<span>on</span>
+								<span><a href=""><strong>category</strong></a></span>
+								<p class="time-info">
+									{{ single_audio.creation_date|timesince }}
+								<span> | comments</span>
+								</p>
+							</div>
+						</div>
+						<div class="post-stats">
+							<?php if(function_exists('dd_fblike_generate')){dd_fblike_generate('Like Button Count');} ?>
+							<?php if(function_exists('dd_twitter_generate')){dd_twitter_generate('Compact', 'imuxe');} ?>
+							<?php if(function_exists('dd_google1_generate')){dd_google1_generate('Compact (20px)');} ?>
+							<img src="holder.js/social/340x30/text:stats">
+						</div>
+						<div class="post-comments">
+							<!-- <img src="holder.js/social/340x600/text:comments-placeholder"> -->
+							<?php comments_popup_link('0', '1', '%', 'comment-count'); ?>
+							<?php comments_template( '', true ); ?>
+						</div>
+			</div>
+				<!-- post navigation -->
+		</div>
+	</div>
+</div>
+{% endblock content %}

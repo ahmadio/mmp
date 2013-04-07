@@ -1,0 +1,41 @@
+{% if doc_items|length > 0 %}
+<ul class="thumbnails">
+	{% for doc_item in doc_items %}
+	<li class="span3 {{ doc_item.type.name }}-item">
+		<div class="thumbnail stream-box">
+			<a href="{% url 'single_doc' item_id=doc_item.id %}">
+				<img class="stream-box-thumb" src="holder.js/240x200"/>
+			</a>
+			<div class="summary">
+				<h1>{{ doc_item.title }}</h1>
+				<p class="description">
+					{{ doc_item.description }}
+				</p>
+			</div>
+			<div class="author-meta clearfix">
+				<div class="author-avatar-wrap pull-left">
+					<a href="{% url 'person_profile' person_id=doc_item.author.id %}">
+						<img class="person-avatar-mini-thumb" src="holder.js/30x30/social/text:avatar" alt="" width="30" height="30"/>
+					</a>
+				</div>
+				<div class="pull-left meta-links">
+					<!-- <span>by</span> -->
+					<a href="{% url 'person_profile' person_id=doc_item.author.id %}"><strong>{{ doc_item.author.username }}</strong></a>
+					<span>on</span>
+					<span><a href=""><strong>category</strong></a></span>
+				</div>
+				<p class="time-info">
+					{{ doc_item.creation_date|timesince }}
+					<span> | comments</span>
+				</p>
+			</div>
+			<div class="stats-meta">
+			</div>
+		</div>
+	</li>
+	{% endfor %}
+</ul>
+<a href="{% url 'doc_list' %}">Load more...</a>
+{% else %}
+<i class="well">There is nothing here to display!</i>
+{% endif %}

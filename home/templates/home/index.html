@@ -1,0 +1,348 @@
+{% extends "base/index.html" %}
+
+{% block content %}
+<!-- page display for logged in users -->
+{% if user.is_authenticated %}
+<div id="content-wrap" class="content-wrap">
+	<div class="content container">
+		<div class="section-strip video-stream">
+			<h1 class="sec-title">Video section</h1>
+			<ul class="thumbnails">
+				<li class="span3">
+					<div class="thumbnail stream-box">
+						<?php
+						if (has_post_thumbnail( )) {?>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail( $size = 'stream-box-thumb', array('class' => 'stream-box-thumb') ); ?>
+							</a>
+						<?php } else {
+							echo '<a href="'. get_permalink().'"><img class="stream-box-thumb" src="' . trailingslashit( get_stylesheet_directory_uri()) . 'img/default-video-thumbnail.jpg' . '" alt="' . get_the_title( ) .'"/></a>';
+						}
+						?>
+						<div class="summary">
+							<h1><?php the_title( $before = '', $after = '', $echo = true ); ?></h1>
+
+							<p class="description">
+								<?php echo get_the_excerpt( ) ?>
+							</p>
+						</div>
+						<div class="author-meta clearfix">
+							<?php
+							$author_name = esc_attr(get_post_meta( $post->ID, $key = 'waz_mm_video_artist', $single = true ));
+							$author_name = (isset($author_name) && $author_name != '') ? $author_name : "MMP";
+							$artist = get_page_by_title( $author_name, $output = OBJECT, $post_type = 'artist' );
+							?>
+							<div class="author-avatar-wrap pull-left">
+								<?php
+								if (has_post_thumbnail( $artist->ID )) {?>
+									<a href="<?php echo get_permalink($artist); ?>">
+										<?php echo get_the_post_thumbnail($artist->ID, 'person-avatar-mini-thumb', array('class' => 'person-avatar-mini-thumb') ); ?>
+									</a>
+								<?php } else {
+									echo '<a href="'. get_permalink($artist).'"><img class="person-avatar-mini-thumb" src="' . trailingslashit( get_stylesheet_directory_uri()) . 'img/default-video-thumbnail.jpg' . '" alt="' . get_the_title( ) .'" width="40" height="40" /></a>';
+								}
+								?>
+							</div>
+							<div class="pull-left meta-links">
+								<!-- <span>by</span> -->
+								<a href="<?php echo get_permalink($artist); ?>"><strong><?php echo $author_name; ?></strong></a>
+								<?php
+								$categories = get_the_category();
+								if (isset($categories[0])) { ?>
+								<span>on</span>
+								<span><a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>"><strong><?php echo $categories[0]->name ?></strong></a></span>
+								<?php } else {
+									# code...
+								}
+
+								?>
+
+							</div>
+							<p class="time-info">
+								<?php echo human_time_diff( get_the_time( 'U' ), current_time('timestamp') ) . ' ago' ?>
+								<span> | <?php comments_popup_link('0', '1', '%', 'comment-count'); ?></span>
+							</p>
+
+						</div>
+						<div class="stats-meta">
+						</div>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			</ul>
+			<a href="<?php echo home_url( $path = '/video', $scheme = null ) ?>">all video posts</a>
+			<?php else: ?>
+			</ul>
+			<i>There is nothing here to display!</i>
+			<?php endif; ?>
+		</div>
+		<?php wp_reset_postdata(); ?>
+		<div class="section-strip audio-stream">
+			<h1 class="sec-title">audio section</h1>
+			<ul class="thumbnails">
+				<?php
+				$audio_args = array(
+					'post_type' => 'audio',
+					'posts_per_page' => 4,
+					);
+				$audio_posts = new WP_Query($audio_args);
+				if ($audio_posts->have_posts()) : while($audio_posts->have_posts()) : $audio_posts->the_post();
+				?>
+
+				<li class="span3 <?php post_class( $class = '', $post_id = null ); ?>">
+					<div class="thumbnail stream-box">
+						<?php
+						if (has_post_thumbnail( )) {?>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail( $size = 'stream-box-thumb', array('class' => 'stream-box-thumb') ); ?>
+							</a>
+						<?php } else {
+							echo '<a href="'. get_permalink().'"><img class="stream-box-thumb" src="' . trailingslashit( get_stylesheet_directory_uri()) . 'img/default-audio-thumbnail.jpg' . '" alt="' . get_the_title( ) .'"/></a>';
+						}
+						?>
+						<div class="summary">
+							<h1><?php the_title( $before = '', $after = '', $echo = true ); ?></h1>
+
+							<p class="description">
+								<?php echo get_the_excerpt( ) ?>
+							</p>
+						</div>
+						<div class="author-meta clearfix">
+							<?php
+							$author_name = esc_attr(get_post_meta( $post->ID, $key = 'waz_mm_audio_artist', $single = true ));
+							$author_name = (isset($author_name) && $author_name != '') ? $author_name : "MMP";
+							$artist = get_page_by_title( $author_name, $output = OBJECT, $post_type = 'artist' );
+							?>
+							<div class="author-avatar-wrap pull-left">
+								<?php
+								if (has_post_thumbnail( $artist->ID )) {?>
+									<a href="<?php get_permalink($artist); ?>">
+										<?php get_the_post_thumbnail($artist->ID, 'person-avatar-mini-thumb', array('class' => 'person-avatar-mini-thumb') ); ?>
+									</a>
+								<?php } else {
+									echo '<a href="'. get_permalink($artist).'"><img class="person-avatar-mini-thumb" src="' . trailingslashit( get_stylesheet_directory_uri()) . 'img/default-audio-thumbnail.jpg' . '" alt="' . get_the_title( ) .'" width="40" height="40" /></a>';
+								}
+								?>
+							</div>
+							<div class="pull-left meta-links">
+								<!-- <span>by</span> -->
+								<a href="<?php echo get_permalink($artist); ?>"><strong><?php echo $author_name; ?></strong></a>
+								<?php
+								$categories = get_the_category();
+								if (isset($categories[0])) { ?>
+								<span>on</span>
+								<span><a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>"><strong><?php echo $categories[0]->name ?></strong></a></span>
+								<?php } else {
+									# code...
+								}
+
+								?>
+							</div>
+							<p class="time-info">
+								<?php echo human_time_diff( get_the_time( 'U' ), current_time('timestamp') ) . ' ago' ?>
+								<span> | <?php comments_popup_link('0', '1', '%', 'comment-count'); ?></span>
+							</p>
+						</div>
+						<div class="stats-meta">
+						</div>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			</ul>
+			<a href="<?php echo home_url( $path = '/audio', $scheme = null ) ?>">all audio posts</a>
+			<?php else: ?>
+			</ul>
+			<i>There is nothing here to display!</i>
+			<?php endif; ?>
+		</div>
+		<?php wp_reset_postdata(); ?>
+		<div class="section-strip doc-stream">
+			<h1 class="sec-title">doc section</h1>
+			<ul class="thumbnails">
+				<?php
+				$doc_args = array(
+					'post_type' => 'doc',
+					'posts_per_page' => 4,
+					);
+				$doc_posts = new WP_Query($doc_args);
+				if ($doc_posts->have_posts()) : while($doc_posts->have_posts()) : $doc_posts->the_post();
+				?>
+
+				<li class="span3 <?php post_class( $class = '', $post_id = null ); ?>">
+					<div class="thumbnail stream-box">
+						<?php
+						if (has_post_thumbnail( )) {?>
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail( $size = 'stream-box-thumb', array('class' => 'stream-box-thumb') ); ?>
+							</a>
+						<?php } else {
+							echo '<a href="'. get_permalink().'"><img class="stream-box-thumb" src="' . trailingslashit( get_stylesheet_directory_uri()) . 'img/default-doc-thumbnail.jpg' . '" alt="' . get_the_title( ) .'"/></a>';
+						}
+						?>
+						<div class="summary">
+							<h1><?php the_title( $before = '', $after = '', $echo = true ); ?></h1>
+
+							<p class="description">
+								<?php echo get_the_excerpt( ) ?>
+							</p>
+						</div>
+						<div class="author-meta clearfix">
+							<?php
+							$author_name = esc_attr(get_post_meta( $post->ID, $key = 'waz_mm_doc_artist', $single = true ));
+							$author_name = (isset($author_name) && $author_name != '') ? $author_name : "MMP";
+							$artist = get_page_by_title( $author_name, $output = OBJECT, $post_type = 'artist' );
+							?>
+							<div class="author-avatar-wrap pull-left">
+								<?php
+								if (has_post_thumbnail( $artist->ID )) {?>
+									<a href="<?php get_permalink($artist); ?>">
+										<?php get_the_post_thumbnail($artist->ID, 'person-avatar-mini-thumb', array('class' => 'person-avatar-mini-thumb') ); ?>
+									</a>
+								<?php } else {
+									echo '<a href="'. get_permalink($artist).'"><img class="person-avatar-mini-thumb" src="' . trailingslashit( get_stylesheet_directory_uri()) . 'img/default-doc-thumbnail.jpg' . '" alt="' . get_the_title( ) .'" width="40" height="40" /></a>';
+								}
+								?>
+							</div>
+							<div class="pull-left meta-links">
+								<!-- <span>by</span> -->
+								<a href="<?php echo get_permalink($artist); ?>"><strong><?php echo $author_name; ?></strong></a>
+								<?php
+								$categories = get_the_category();
+								if (isset($categories[0])) { ?>
+								<span>on</span>
+								<span><a href="<?php echo esc_url( get_category_link( $categories[0]->term_id ) ); ?>"><strong><?php echo $categories[0]->name ?></strong></a></span>
+								<?php } else {
+									# code...
+								}
+
+								?>
+							</div>
+							<p class="time-info">
+								<?php echo human_time_diff( get_the_time( 'U' ), current_time('timestamp') ) . ' ago' ?>
+								<span> | <?php comments_popup_link('0', '1', '%', 'comment-count'); ?></span>
+							</p>
+						</div>
+						<div class="stats-meta">
+						</div>
+					</div>
+				</li>
+				<?php endwhile; ?>
+			</ul>
+			<a href="<?php echo home_url( $path = '/doc', $scheme = null ) ?>">all doc posts</a>
+			<?php else: ?>
+			</ul>
+			<i>There is nothing here to display!</i>
+			<?php endif; ?>
+		</div>
+		<?php wp_reset_postdata(); ?>
+	</div>
+</div>
+{% else %}
+<div class="stage-wrap">
+	<div class="stage container">
+		<div class="row">
+			<div class="video-box-wrap span7">
+				<div class="video-box">
+					<!-- <img src="holder.js/520x300"> -->
+				</div>
+			</div>
+			<div class="opt-in-wrap span5">
+				<div>
+					<h2 class="welcome">Welcome to</h2>
+					<h2 class="muslim-media">Muslim Media</h2>
+					<p class="opt-msg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<a class="sign-up-btn btn btn-large btn-success span4" data-toggle="modal"  href="#sign-up-form-wrap">Sign Up NOW!</a>
+					<div id="sign-up-form-wrap" class="modal hide fade sign-up-form-wrap">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal"><small>x</small></button>
+							<h3>Register for Muslim Media!</h3>
+						</div>
+						<div class="modal-body">
+							<form method="post" action="{% url 'register_person' %}" class="">
+								{% csrf_token %}
+								{{ register_form.as_p }}
+								<input type="submit" name="submit" class="btn btn-success" value="Sign Up" />
+							</div>
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="content-wrap" class="content-wrap">
+	<div class="content container">
+		<div class="row">
+			<div class="features span6">
+				<h1 class="sec-title">Features</h1>
+				<h2 class="sub-sec-title">Originals</h2>
+				<ul class="inline features-list clearfix">
+					<li class="span5 clearfix">
+						<span class="feature-img feature-quran"><img src="{{ STATIC_URL }}img/quran.png"></span>
+						<div class="feature-summary">
+							<h3>Islamic Lessons</h3>
+							<small>Professionally recorded Islamic lessons on various topics available for FREE downloading. </small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-hadeith"><img src="{{ STATIC_URL }}img/hadeith.png"></span>
+						<div class="feature-summary">
+							<h3>Islamic Docs</h3>
+							<small>Search our database of articles and books ready for downloading and sharing.</small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-courses"><img src="{{ STATIC_URL }}img/courses.png"></span>
+						<div class="feature-summary">
+							<h3>Islamic Audios</h3>
+							<small>enjoy our original Qur'an recitations, Islamic podcasts, nasheeds and more!</small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/nasheeds.png"></span>
+						<div class="feature-summary">
+							<h3>Islamic Videos</h3>
+							<small>Download and share our professionally recorded videos and documentaries.</small>
+						</div>
+					</li>
+					<li class="span5">
+						<span class="feature-img feature-nasheeds"><img src="{{ STATIC_URL }}img/nasheeds.png"></span>
+						<div class="feature-summary">
+							<h3>Islamic Photos</h3>
+							<small>Download Islamic photos for your mobile devices and computers! Print them, share them, use them in your graphic projects absolutely FREE of charge!</small>
+						</div>
+					</li>
+					<li class="span5">
+						<a class="more-features-link" href="#">
+							<!-- <p class="more-features">And more</p> -->
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mini-stream-wrap span6">
+				<h1 class="sec-title">New Media</h1>
+				<div class="mini-stream">
+					<ul class="inline clearfix">
+						{% for item in items %}
+							<li class="span5">
+								<span class="feature-img feature-{{ item.type.name }}-icon"><img src="{{ STATIC_URL }}img/{{ item.type.name }}.png"></span>
+								<p>{{ item.title|truncatechars:50 }}</p>
+							</li>
+						{% endfor %}
+						<a href="{% url 'user_home' %}" class="btn btn-mini more-media-btn">See More...</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endblock content %}
+
+<h1>you are here {{ location }}</h1>
+<!-- {% debug %} -->
+<img src="{{ STATIC_URL }}img/pg.jpg">

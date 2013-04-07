@@ -1,0 +1,89 @@
+{% extends 'base/index.html' %}
+
+{% block content %}
+<div id="content-wrap" class="content-wrap single artist">
+	<div class="content container">
+		<div class="row">
+			<div class="post span8">
+				<div class="artist-info-wrap row">
+					<div class="artist-photo span2">
+					<a href=""><img class="person-avatar-large-thumb" src="{% if person.avatar %} {{ person.avatar.url }} {% endif %}" alt="" width="170" height="170" /></a>
+					</div>
+					<div class="artist-meta span5">
+						<h2>{{ person.username }}</h2>
+						<small>{{ person.bio|truncatechars:300 }}</small>
+					</div>
+				</div>
+				<div class="artist-items">
+					<h4>Person items</h4>
+					<ul class="thumbnails">
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="side span4">
+				<h2 class="post-title">{{ person.username }}</h2>
+				<div class="description">
+					<p><?php the_excerpt(); ?></p>
+				</div>
+					<div class="post-stats">
+						<?php if(function_exists('dd_fblike_generate')){dd_fblike_generate('Like Button Count');} ?>
+						<?php if(function_exists('dd_twitter_generate')){dd_twitter_generate('Compact', 'imuxe');} ?>
+						<?php if(function_exists('dd_google1_generate')){dd_google1_generate('Compact (20px)');} ?>
+						<img src="holder.js/social/340x30/text:artist stats">
+					</div>
+					<div class="post-comments">
+						<!-- <img src="holder.js/social/340x600/text:comments-placeholder"> -->
+						<?php comments_popup_link('0', '1', '%', 'comment-count'); ?>
+							<?php comments_template( '', true ); ?>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,403 @@
+/*
+Theme Name: Muslim Media Production
+Theme URI: http://marketingmatters4u.com;
+Description: muslim media production theme
+Version: 1.0
+Author: Ahmad AbdArrahman
+Author URI: @imuxe
+Tags: muslim, media, islamic
+*/
+
+
+/*=============================*/
+/* imports */
+/*=============================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+
+/*=============================*/
+/* global styles */
+/*=============================*/
+
+body {
+	color: #444;
+	background-color: #fafafa;
+	font-family: 'Open Sans', sans-serif;
+}
+
+::selection {
+	background: #86AC34; /* Safari */
+	color: #fafafa;
+	}
+
+::-moz-selection {
+	background: #86AC34; /* Firefox */
+	color: #fafafa;
+}
+
+
+
+
+/*=============================*/
+/* header section */
+/*=============================*/
+#header-wrap {
+	background-color: #86AC34;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	        box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+#header-wrap.logged-in {
+	position: fixed;
+	width: 100%;
+}
+
+.top-logo {
+	width: 172px;
+	height: 110px;
+	background: url(./img/logo.png) 0 0 no-repeat scroll;
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.logged-in .top-logo {
+	width: 279px;
+	height: 40px;
+	background: url(./img/wide-logo.png) 0 0 no-repeat scroll;
+	text-indent: 1000%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 5px 0;
+}
+
+.user-links > ul {
+	padding: 0;
+	margin: 0;
+	height: 50px;
+}
+
+/*form.header-search {
+	margin: 0;
+	padding-bottom: 10px;
+}*/
+
+.user-links > ul li.dropdown {
+	line-height: 20px;
+	height: 100%;
+}
+
+.user-links > ul li.dropdown:hover {
+	background-color: #97BD45;
+}
+
+.user-links a {
+	font-size: 20px;
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+	padding: 14px 0;
+	outline: none;
+	color: #eaeaea;
+}
+
+.user-links > ul li.dropdown > a > i {
+	margin-top: 5px;
+}
+
+.sign-in {
+	margin: 20px 0 0;
+}
+
+
+/*=============================*/
+/* page section */
+/*=============================*/
+#page-wrap {
+	background-color: #fff;
+	margin: 0;
+}
+
+#page-wrap.logged-in {
+	padding-top: 60px;
+}
+
+
+/*=============================*/
+/* stage section */
+/*=============================*/
+
+.stage-wrap {
+	height: 480px;
+	background: url(./img/head-phone.png) 125% 0 no-repeat scroll,
+	url(./img/pg.jpg) 0 0 repeat-x scroll;
+	color: #fff;
+}
+
+.stage {
+	/*background-color: #aacada;*/
+	padding: 100px 0;
+}
+
+.video-box {
+	width: 520px;
+	height: 280px;
+	border: 10px solid #999;
+	-webkit-box-shadow: 0 6px 15px 2px rgba(0, 0, 0, .4);
+	   -moz-box-shadow: 0 6px 15px 2px rgba(0, 0, 0, .4);
+	        box-shadow: 0 6px 15px 2px rgba(0, 0, 0, .4);
+}
+
+.opt-in-wrap > div {
+	padding-left: 80px;
+}
+
+.sign-up-btn {
+	margin: auto auto auto 0;
+}
+
+#sign-up-form-wrap {
+	color: #777;
+}
+
+/*=============================*/
+/* content section */
+/*=============================*/
+
+#content-wrap {
+	padding: 20px 0;
+}
+
+.sec-title,
+.sub-sec-title {
+	font-weight: normal;
+}
+
+.sub-sec-title {
+	color: #aaff11;
+}
+
+
+.stream-box {
+	font-size: 10px;
+	line-height: 12px;
+}
+
+img.stream-box-thumb {
+	width: 240px;
+	height: 160px;
+}
+
+.stream-box h1 {
+	font-size: 14px;
+	margin: 5px 0;
+	line-height: 16px;
+	background: #e7e7e7;
+	padding: 0 5px;
+	margin: 0 -5px;
+}
+
+.stream-box .description {
+	color: #777;
+	font-size: 10px;
+	line-height: 14px;
+	height: 56px;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.stream-box .author-meta {
+	background: #e7e7e7;
+	padding: 5px;
+	margin: -5px;
+	border-radius: 0 0 5px 5px;
+}
+
+.author-avatar-wrap {
+	width: 30px;
+	height: 30px;
+	margin-right: 2px;
+}
+
+.meta-links {
+	width: 200px;
+}
+
+img.person-avatar-mini-thumb {
+	width: 30px;
+	height: 30px;
+}
+
+.time-info {
+	font-size: 10px;
+	color: #777;
+	vertical-align: baseline;
+	margin: 3px 0 0;
+	padding: 3px 0 0;
+	clear: both;
+}
+
+
+/*=============================*/
+/* Single video page */
+/*=============================*/
+
+.single .post {
+	/*background-color: #123239;*/
+}
+
+.single h1,
+.single h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+.single .side {
+	/*background-color: #982372;*/
+}
+
+.video-player-wrap {
+	border: 1px solid #eaeaea;
+	width: 660px;
+	height: 420px;
+	border-radius: 5px;
+}
+
+.single .side {
+	border: 1px solid #eaeaea;
+	margin: -5px;
+	border-radius: 5px;
+	padding: 0 4px 5px;
+}
+
+.single .description {
+	font-size: 12px;
+	color: #777;
+}
+
+.single .side h2 {
+	border-bottom: 1px solid #eee;
+}
+
+.single .author-meta {
+	padding: 0;
+	margin: 0;
+}
+
+.single .side .post-comments {
+	padding-top: 10px;
+}
+
+
+
+/*=============================*/
+/* Single audio page  */
+/*=============================*/
+
+.audio-player-wrap {
+	border: 1px solid #eaeaea;
+	width: 660px;
+	height: 170px;
+	border-radius: 5px;
+}
+
+/*=============================*/
+/* Doc single Page */
+/*=============================*/
+.doc-reader-wrap {
+	border: 1px solid #eaeaea;
+	width: 660px;
+	height: 800px;
+	border-radius: 5px;
+}
+
+
+/*=============================*/
+/* Artist Profile */
+/*=============================*/
+.artist-info-wrap .artist-photo {
+	width: 170px;
+	height: 170px;
+}
+
+/*============
+homepage content
+=============*/
+
+.features-list {
+	padding-left: 0;
+}
+
+.features-list li {
+	border: 1px solid #aaff11;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 5px 0;
+	padding: 3px;
+}
+
+.features-list li h3 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.feature-img {
+	float: left;
+}
+
+.feature-summary {
+	width: 270px;
+	float: right;
+}
+
+a.more-features-link {
+	text-decoration: none;
+}
+
+.more-features {
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+	line-height: 30px;
+	margin: 5px;
+}
+
+.mini-stream {
+	/*padding-left: 20px;*/
+	border-left: 1px solid #efefef;
+}
+
+.mini-stream ul {
+	padding-left: 0;
+}
+
+.mini-stream li {
+	margin: 4px 0;
+}
+
+.mini-stream li p {
+	width: 380px;
+	float: right;
+	font-size: 12px;
+	color: #777;
+	margin: 5px 0;
+}
+
+.more-media-btn {
+	margin-left: 200px;
+}
+
+
+/*=============================*/
+/* footer section */
+/*=============================*/
+#footer-wrap {
+	/*background-color: #86AC34;*/
+	padding: 20px 0;
+}
+
+

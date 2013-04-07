@@ -1,0 +1,94 @@
+{% extends 'base/index.html' %}
+
+{% block content %}
+<div id="content-wrap" class="content-wrap single video">
+	<div class="content container">
+		<div class="row">
+			<div class="post span8">
+				<h1 class="post-title">{{ single_video.title }}</h1>
+				<div id="media-player" class="video-player-wrap">
+					<!-- <img src="holder.js/660x420/text:Video Player"> -->
+					<a href="{{ single_video.media_url }}">youtube</a>
+				</div>
+				<div class="related-items">
+					<h4>Related videos</h4>
+					<ul class="thumbnails">
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="artist-items">
+					<h4>Other videos for artist</h4>
+					<ul class="thumbnails">
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+						<li>
+							<a class="thumbnail span2" href="#">
+								<img src="holder.js/170x100">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="side span4">
+				<h2 class="post-title">{{ single_video.title }}</h2>
+				<div class="description">
+					<p>{{ single_video.description }}</p>
+				</div>
+				<div class="author-meta clearfix">
+							<div class="author-avatar-wrap pull-left">
+								<a href="">
+									<img class="person-avatar-mini-thumb" src="holder.js/30x30/social/text:avatar" alt="" width="30" height="30"/>
+								</a>
+							</div>
+							<div class="pull-left">
+								<!-- <span>by</span> -->
+								<a href=""><strong>{{ single_video.author.username }}</strong></a>
+								<span>on</span>
+								<span><a href=""><strong>category</strong></a></span>
+								<p class="time-info">
+									{{ single_video.creation_date|timesince }}
+								<span> | comments</span>
+								</p>
+							</div>
+						</div>
+						<div class="post-stats">
+							<?php if(function_exists('dd_fblike_generate')){dd_fblike_generate('Like Button Count');} ?>
+							<?php if(function_exists('dd_twitter_generate')){dd_twitter_generate('Compact', 'imuxe');} ?>
+							<?php if(function_exists('dd_google1_generate')){dd_google1_generate('Compact (20px)');} ?>
+							<img src="holder.js/social/340x30/text:stats">
+						</div>
+						<div class="post-comments">
+							<!-- <img src="holder.js/social/340x600/text:comments-placeholder"> -->
+							<?php comments_popup_link('0', '1', '%', 'comment-count'); ?>
+							<?php comments_template( '', true ); ?>
+						</div>
+			</div>
+				<!-- post navigation -->
+		</div>
+	</div>
+</div>
+{% endblock content %}

@@ -4,8 +4,84 @@
 		"selected_items":
 		[
 			[
+				"I",
+				"ItemModelAdmin"
+			],
+			[
+				"Sta",
+				"STATIC_URL"
+			],
+			[
+				"set",
+				"settings"
+			],
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"us",
+				"user_home"
+			],
+			[
+				"person",
+				"person"
+			],
+			[
+				"ge",
+				"get_user"
+			],
+			[
+				"pers",
+				"PERSON_GENDER"
+			],
+			[
+				"requ",
+				"required"
+			],
+			[
 				"conte",
-				"content-wrap"
+				"context_processors"
+			],
+			[
+				"login",
+				"login_person"
+			],
+			[
+				"redi",
+				"redirect"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"Per",
+				"PersonAdmin"
+			],
+			[
+				"person_",
+				"person_profile"
+			],
+			[
+				"item",
+				"Item"
+			],
+			[
+				"Pu",
+				"PUBLISHED"
+			],
+			[
+				"PU",
+				"PUBLISHING_STATUS"
+			],
+			[
+				"publi",
+				"Publishing"
+			],
+			[
+				"dr",
+				"DRAFT"
 			],
 			[
 				"box",
@@ -372,10 +448,6 @@
 				"margin-bottom"
 			],
 			[
-				"ma",
-				"margin"
-			],
-			[
 				"nexlin",
 				"next_posts_link"
 			],
@@ -442,15 +514,67 @@
 			[
 				"nor",
 				"no-repeat"
-			],
-			[
-				"met",
-				"meta	Tag"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "mmp/settings.py",
+			"settings":
+			{
+				"buffer_size": 3726,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "people/models.py",
+			"settings":
+			{
+				"buffer_size": 5565,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "people/admin.py",
+			"settings":
+			{
+				"buffer_size": 1021,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "people/forms.py",
+			"settings":
+			{
+				"buffer_size": 7022,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "items/models.py",
+			"settings":
+			{
+				"buffer_size": 1702,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "items/admin.py",
+			"settings":
+			{
+				"buffer_size": 550,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "home/templates/home/index.html",
+			"settings":
+			{
+				"buffer_size": 13642,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -596,6 +720,65 @@
 	},
 	"file_history":
 	[
+		"/home/ahmad/django/mmp/templates/base/index.html",
+		"/tmp/fz3temp-1/settings.py",
+		"/home/ahmad/django/mmp/home/views.py",
+		"/home/ahmad/django/mmp/templates/admin/base_site.html",
+		"/home/ahmad/django/mmp/items/admin.py",
+		"/home/ahmad/django/mmp/items/models.py",
+		"/home/ahmad/django/mmp/mmp/settings.py",
+		"/etc/postgresql/9.1/main/pg_hba.conf",
+		"/tmp/fz3temp-1/settings 5.py",
+		"/tmp/fz3temp-1/models.py",
+		"/tmp/fz3temp-1/settings 4.py",
+		"/home/ahmad/django/mmp/items/templates/items/single_audio.html",
+		"/home/ahmad/django/mmp/mmp/urls.py",
+		"/home/ahmad/django/mmp/people/templates/people/person_profile.html",
+		"/home/ahmad/django/mmp/people/models.py",
+		"/home/ahmad/django/mmp/people/forms.py",
+		"/home/ahmad/django/mmp/people/admin.py",
+		"/tmp/fz3temp-1/urls.py",
+		"/tmp/fz3temp-1/settings 3.py",
+		"/home/ahmad/django/mmp/people/views.py",
+		"/home/ahmad/django/mmp/bootstrap/style.css",
+		"/home/ahmad/django/mmp/home/templates/home/index.html",
+		"/tmp/fz3temp-1/settings 2.py",
+		"/tmp/fz3temp-1/urls 2.py",
+		"/home/ahmad/www/trending/wp-content/themes/mashable/functions.php",
+		"/home/ahmad/www/trending/wp-content/themes/mashable/index.php",
+		"/home/ahmad/.cache/.fr-BQIe85/start/index.html",
+		"/home/ahmad/django/mmp/items/views.py",
+		"/home/ahmad/django/mmp/items/templates/items/video_stream_box.html",
+		"/home/ahmad/django/mmp/items/templates/items/audio_stream_box.html",
+		"/home/ahmad/django/mmp/items/templates/items/doc_stream_box.html",
+		"/home/ahmad/django/mmp/people/urls.py",
+		"/home/ahmad/django/mmp/people/templates/people/complete_person_profile.html",
+		"/home/ahmad/django/mmp/home/templates/home/user_home.html",
+		"/home/ahmad/django/mmp/fastcgi/dispatch.fcgi",
+		"/home/ahmad/django/mmp/fastcgi/.htaccess",
+		"/home/ahmad/.ssh/id_rsa.pub",
+		"/home/ahmad/.ssh/id_rsa",
+		"/home/ahmad/.ssh/known_hosts",
+		"/home/ahmad/django/mmp/items/templates/items/doc_list.html",
+		"/home/ahmad/django/mmp/people/templates/people/register_person.html",
+		"/home/ahmad/django/mmp/people/templates/people/login_person.html",
+		"/home/ahmad/django/mmp/items/urls.py",
+		"/home/ahmad/django/mmp/items/templates/items/audio_list.html",
+		"/home/ahmad/django/mmp/items/templates/items/video_list.html",
+		"/home/ahmad/django/mmp/items/templates/items/single_video.html",
+		"/home/ahmad/django/mmp/mmp.sublime-workspace",
+		"/home/ahmad/django/mmp/items/templates/items/single_doc.html",
+		"/home/ahmad/www/muslim-media/wordpress/wp-content/themes/MMP/single-video.php",
+		"/home/ahmad/django/mmp/items/templates/items/vide_list.html",
+		"/home/ahmad/django/mmp/home/urls.py",
+		"/home/ahmad/www/muslim-media/wordpress/wp-content/themes/MMP/home.php",
+		"/home/ahmad/www/muslim-media/wordpress/wp-content/themes/MMP/index.php",
+		"/home/ahmad/www/muslim-media/wordpress/wp-content/themes/MMP/footer.php",
+		"/home/ahmad/www/muslim-media/wordpress/wp-content/themes/MMP/header.php",
+		"/home/ahmad/django/mmp/actions/admin.py",
+		"/home/ahmad/django/mmp/actions/models.py",
+		"/home/ahmad/django/roy/roy/settings.py",
+		"/home/ahmad/django/mmp/.gitignore",
 		"/home/ahmad/www/huda-demo/_modules/_courselistCurrent.php",
 		"/home/ahmad/www/huda-demo/less/bootstrap.css",
 		"/home/ahmad/www/huda-demo/css/bootstrap.css",
@@ -664,66 +847,7 @@
 		"/home/ahmad/www/new-huda/generate_certificate.php",
 		"/home/ahmad/www/huda/new_design/html-css/single.php",
 		"/home/ahmad/www/huda/new_design/html-css/index.php",
-		"/home/ahmad/www/huda/new_design/html-css/header.php",
-		"/home/ahmad/www/huda/new_design/html-css/functions.php",
-		"/home/ahmad/Desktop/new-huda/_modules/dashboard.php",
-		"/home/ahmad/www/new-huda/_modules/_courselistFreeList.php",
-		"/home/ahmad/Desktop/new-huda/_modules/_courselistEpisodes.php",
-		"/home/ahmad/Desktop/new-huda/style.css",
-		"/home/ahmad/www/new-huda/_modules/z-singleLessonPage.php",
-		"/home/ahmad/www/new-huda/_modules/singleCourse.php",
-		"/home/ahmad/www/new-huda/functions.php",
-		"/home/ahmad/www/new-huda/facebook-connect.php",
-		"/home/ahmad/www/new-huda/logout.php",
-		"/home/ahmad/www/new-huda/_modules/homepage.php",
-		"/home/ahmad/www/new-huda/_modules/_register.php",
-		"/home/ahmad/www/new-huda/fbindex.php",
-		"/home/ahmad/www/new-huda/_modules/_about.php",
-		"/home/ahmad/www/new-huda/facebook-php-sdk/src/base_facebook.php",
-		"/home/ahmad/www/new-huda/facebook-php-sdk-master/examples/example.php",
-		"/home/ahmad/www/new-huda/_modules/sponsorship.php",
-		"/home/ahmad/www/new-huda/_modules/courseListPage.php",
-		"/home/ahmad/www/huda/sponsor.html",
-		"/home/ahmad/www/new-huda/_modules/scholraship.php",
-		"/home/ahmad/Downloads/style.css",
-		"/home/ahmad/Downloads/Arctext/css/style.css",
-		"/home/ahmad/www/new-huda/_modules/_contact.php",
-		"/home/ahmad/www/new-huda/_modules/_student.php",
-		"/home/ahmad/www/new-huda/_modules/_testimonialsCourse.php",
-		"/home/ahmad/www/new-huda/_modules/_testimonials.php",
-		"/home/ahmad/www/new-huda/_modules/_courselist.php",
-		"/home/ahmad/www/new-huda/Connections/autoMate.php",
-		"/home/ahmad/www/new-huda/_modules/genContent.php",
-		"/home/ahmad/www/new-huda/index.php",
-		"/home/ahmad/www/new-huda/_modules/courseList.php",
-		"/home/ahmad/www/new-huda/slider/index.html",
-		"/home/ahmad/www/huda/new_design/html-css/style.css",
-		"/home/ahmad/www/huda/new_design/html-css/fpdf17/tutorial/calligra.php",
-		"/home/ahmad/www/huda/new_design/html-css/footer.php",
-		"/home/ahmad/www/huda/index.php",
-		"/home/ahmad/www/huda/_modules/_mainSite.php",
-		"/home/ahmad/www/huda/_modules/_testimonials.php",
-		"/home/ahmad/www/huda/_modules/_middle.php",
-		"/home/ahmad/www/huda/_modules/_menu.php",
-		"/home/ahmad/www/huda/_modules/_login.php",
-		"/home/ahmad/www/huda/new_design/html-css/fpdf17/tutorial/tuto2.php",
-		"/home/ahmad/www/huda/new_design/html-css/fpdf17/fpdf.php",
-		"/home/ahmad/www/huda/new_design/html-css/fpdf17/tutorial/tuto1.php",
-		"/home/ahmad/www/huda/new_design/html-css/fpdf17/fpdf.css",
-		"/home/ahmad/www/asas/html-css/index.html",
-		"/home/ahmad/www/huda/new_design/CircularContentCarousel/index.html",
-		"/home/ahmad/www/huda/new_design/html-css/less/variables.less",
-		"/home/ahmad/www/huda/new_design/html-css/Connections/autoMateServer.php",
-		"/home/ahmad/www/huda/Connections/autoMate.php",
-		"/home/ahmad/www/huda/_modules/_courselist.php",
-		"/home/ahmad/www/huda/_registerStudent_.php",
-		"/home/ahmad/www/huda/new_design/html-css/geoplugin.class/index.php",
-		"/home/ahmad/www/huda/new_design/html-css/geoplugin.class/geoplugin.class.php",
-		"/home/ahmad/www/huda/new_design/html-css/index.html",
-		"/home/ahmad/www/huda/new_design/html-css/redirects/arabic_order.php",
-		"/home/ahmad/www/huda/new_design/html-css/redirects/english_order.php",
-		"/home/ahmad/www/huda/new_design/html-css/redirects/index.php",
-		"/home/ahmad/www/huda/new_design/html-css/redirect.php"
+		"/home/ahmad/www/huda/new_design/html-css/header.php"
 	],
 	"find":
 	{
@@ -734,6 +858,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/home/ahmad/django/mmp"
 		]
 	},
 	"find_state":
@@ -741,6 +866,113 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modal",
+			"MyModelAdmin",
+			"add",
+			"username__id__exact",
+			"add",
+			"user",
+			"settings",
+			"AUTH_USER_MODEL",
+			"local",
+			"AUTH_USER_MODEL",
+			"USER",
+			"AUTH_profile",
+			"auth",
+			"media",
+			"tv",
+			"{%",
+			"media",
+			"change",
+			"button",
+			"type",
+			"itmes",
+			"settings",
+			"sign-up",
+			"sign-up-form-wrap",
+			"sign-up",
+			"form",
+			"include_login_form",
+			"context_processors",
+			"context",
+			"contex_processor",
+			"mod",
+			"moda",
+			"modal",
+			"birthdate",
+			"gender",
+			"last_name",
+			"first_name",
+			"gende",
+			"last_name",
+			"first",
+			"wid",
+			"complete_person_profile",
+			"    \n",
+			"mess",
+			"from",
+			"form",
+			"PersonChangeForm",
+			"_",
+			"load",
+			"auth_login",
+			"authentication_form",
+			"current_site",
+			"AuthenticationForm",
+			"LoginPersonForm",
+			"required",
+			"user.",
+			"User.",
+			"get_user_model",
+			"user",
+			"username",
+			"user",
+			"audio_item.id",
+			"single",
+			".description",
+			"discription",
+			"description",
+			"time",
+			"audio",
+			"Audio",
+			"audio",
+			"video",
+			"audio",
+			"doc",
+			"single_doc",
+			"single_video",
+			"doc_items",
+			"doc_list",
+			"audio_list",
+			"video_list",
+			"video",
+			"audio_item",
+			"video",
+			"holder.js/300x200",
+			"width=\"30\" height=\"30\"",
+			"width=\"40\" height=\"4\"",
+			" item",
+			"item",
+			"video",
+			"holder.js/30x30",
+			"holder.js/30x30/",
+			"Audio",
+			"audio",
+			"Video",
+			"video",
+			"Video",
+			"video",
+			"<?php echo IMAGES ?>/",
+			"<?php print(TEMPPATH); ?>/",
+			"{{ block ",
+			"<?php print(TEMPPATH); ?>/",
+			"STATICFILES_FINDERS",
+			"TEMPLATE_DIRS",
+			"250",
+			"MyUser",
+			"user.MyUser",
+			"MyUser",
+			"'\n",
 			"width",
 			"68",
 			"color",
@@ -761,114 +993,7 @@
 			"watch",
 			"dashboard",
 			"160",
-			"167p",
-			"prev",
-			"prv",
-			"next",
-			"SetTextColor",
-			"recomm",
-			"<h4 class=\"current\">",
-			"course-box",
-			".right-column ",
-			".testmonials",
-			".right-column ",
-			"testmonials",
-			"lessons",
-			".right-column ",
-			"video-thumbnails",
-			"page-",
-			"page-wrap",
-			"instructor-info",
-			".right-column h1",
-			"free-courses-title",
-			"face",
-			"adsfads",
-			"enroll",
-			"header",
-			"250",
-			"dashb",
-			"$user",
-			"submi",
-			"$user",
-			"about",
-			"Message from Huda Academy",
-			"p",
-			"5",
-			"login",
-			"wrap",
-			".stage-wrap",
-			"4",
-			"h6>",
-			"<h6",
-			"<h6>",
-			"button",
-			"small",
-			"free-lesson",
-			"left",
-			"free",
-			"h3",
-			"3",
-			"enroll",
-			"disabled",
-			"button",
-			"p",
-			".course-list-page",
-			".instructor-info",
-			"disabled-links",
-			"=\"#\"",
-			"10",
-			".course-list-page .course-box .lessons > ol li",
-			".course-list-page.dashboard .course-box",
-			"15px",
-			"span",
-			"dash",
-			".course-box .lessons >",
-			"less",
-			"span3",
-			"$user",
-			"$user ",
-			"$user",
-			"{Your App ID}",
-			"h1",
-			"{Your App ID}",
-			"spon",
-			"<small>Price: $49 - Click below to sponsor Abu</small>",
-			"\n                    ",
-			"                        <small>Price: $49 - Click below to sponsor Abu</small>\n",
-			"<small>Price: $49 - Click below to sponsor Abu</small>",
-			"less",
-			"lesson",
-			"screen-icon.png",
-			"<input ",
-			"for\"",
-			"last_name",
-			"for\"last_name",
-			"for\"",
-			"scolarship",
-			"scholraship",
-			"\"name",
-			"name\"",
-			"app",
-			"span5",
-			"box ",
-			"box",
-			"type=\"text\"",
-			"type=\"text\" ",
-			"type=\"text\"",
-			"completed-courses",
-			"Paid",
-			"paid",
-			"free",
-			"Free",
-			"h6",
-			"<span class=\"watch-link\"><a href=\"#\">Watch Now</a></span>",
-			"\n                    ",
-			"><span class=\"watch-link\"><a href=\"#\">Watch Now</a></span>\n",
-			"<span class=\"watch-link\"><a href=\"#\">Watch Now</a></span>",
-			"span6 course-box",
-			"tab-pane row",
-			"newest",
-			"Newest"
+			"167p"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -876,6 +1001,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"description",
 			""
 		],
 		"reverse": false,
@@ -887,8 +1013,201 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "mmp/settings.py",
+					"settings":
+					{
+						"buffer_size": 3726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3012,
+								3012
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1785.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "people/models.py",
+					"settings":
+					{
+						"buffer_size": 5565,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2152,
+								2152
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1428.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "people/admin.py",
+					"settings":
+					{
+						"buffer_size": 1021,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "people/forms.py",
+					"settings":
+					{
+						"buffer_size": 7022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								946,
+								946
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "items/models.py",
+					"settings":
+					{
+						"buffer_size": 1702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								615,
+								615
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1139.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "items/admin.py",
+					"settings":
+					{
+						"buffer_size": 550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "home/templates/home/index.html",
+					"settings":
+					{
+						"buffer_size": 13642,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10217,
+								10263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4528.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -963,7 +1282,7 @@
 		[
 			[
 				"",
-				"/home/ahmad/www/gisics/gisics.sublime-project"
+				"/home/ahmad/django/hs/home_school.sublime-project"
 			]
 		],
 		"width": 380.0

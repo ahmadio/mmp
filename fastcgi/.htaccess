@@ -1,0 +1,5 @@
+AddHandler fastcgi-script .fcgi
+RewriteEngine On
+RewriteBase /public_html/demo
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ dispatch.fcgi/$1 [QSA,L]
