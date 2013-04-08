@@ -72,10 +72,16 @@
 					<p><?php the_excerpt(); ?></p>
 				</div>
 					<div class="post-stats">
-						<?php if(function_exists('dd_fblike_generate')){dd_fblike_generate('Like Button Count');} ?>
-						<?php if(function_exists('dd_twitter_generate')){dd_twitter_generate('Compact', 'imuxe');} ?>
-						<?php if(function_exists('dd_google1_generate')){dd_google1_generate('Compact (20px)');} ?>
-						<img src="holder.js/social/340x30/text:artist stats">
+						<!-- AddThis Button BEGIN -->
+							<div class="addthis_toolbox addthis_default_style ">
+							<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+							<a class="addthis_button_tweet"></a>
+							<a class="addthis_button_pinterest_pinit"></a>
+							<a class="addthis_counter addthis_pill_style"></a>
+							</div>
+							<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+							<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50ce56d0632c81d5"></script>
+						<!-- <img src="holder.js/social/340x30/text:artist stats"> -->
 					</div>
 					<div class="post-comments">
 						<!-- <img src="holder.js/social/340x600/text:comments-placeholder"> -->
