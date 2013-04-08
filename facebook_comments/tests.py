@@ -9,29 +9,29 @@ class FBCommentBasicTest(unittest.TestCase):
 	def setUp(self):
 		self.path = os.environ.get('SITE')
 		self.c = Context({"path":self.path})
-	
+
 	def test_nothing(self):
 		t_str = """{% load fb_comments %}"""
 		t = Template(t_str)
 		output = t.render(self.c)
-	
+
 	def test_render(self):
 		t_str = """{% load fb_comments %}{% fb_comments href=path %}"""
 		t = Template(t_str)
 		output = t.render(self.c)
 
-		#assert widget actually gets rendered 
+		#assert widget actually gets rendered
 		self.assertTrue("<div class=\"fb-comments\"" in output)
 
 		#assert js is output in this case
 		self.assertTrue("<script>" in output)
-	
+
 	def test_no_scripts(self):
 		t_str = """{% load fb_comments %}{% fb_comments href=path no_scripts %}"""
 		t = Template(t_str)
 		output = t.render(self.c)
 
-		#assert widget actually gets rendered 
+		#assert widget actually gets rendered
 		self.assertTrue("<div class=\"fb-comments\"" in output)
 
 		#assert js is not output in this case
