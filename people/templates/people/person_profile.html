@@ -79,8 +79,8 @@
 					</div>
 					<div class="post-comments">
 						<!-- <img src="holder.js/social/340x600/text:comments-placeholder"> -->
-						<?php comments_popup_link('0', '1', '%', 'comment-count'); ?>
-							<?php comments_template( '', true ); ?>
+						{% load fb_comments %}
+						{% fb_comments width=480 include_cached_comments no_scripts %}
 					</div>
 			</div>
 		</div>
