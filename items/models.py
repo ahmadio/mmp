@@ -34,6 +34,9 @@ class Category(models.Model):
 	name = models.CharField(max_length=50)
 	icon = models.ImageField(upload_to='media/items/app/category/media/', null=True, blank=True)
 
+	def __unicode__(self):
+		return self.name
+
 
 class Item(models.Model):
 	"""docstring for Item"""

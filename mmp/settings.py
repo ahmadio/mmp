@@ -42,6 +42,7 @@ INSTALLED_APPS = (
 
     # third party apps
     'south',
+    'facebook_comments',
 
     # my apps
     'home',
@@ -68,6 +69,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.static",
     "django.core.context_processors.tz",
     "django.contrib.messages.context_processors.messages",
+
+    #for facebook_comments to work
+    'django.core.context_processors.request',
 
     # my context_processors
     # this one for including login form in every page

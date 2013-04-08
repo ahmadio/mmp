@@ -1,0 +1,16 @@
+{% extends 'base/index.html' %}
+
+{% block content %}
+<div id="content-wrap" class="content-wrap">
+	<div class="content container">
+		<div class="">
+			<h1 class="sec-title">all categories</h1>
+			<ul>
+			{% for category in categories %}
+				<li><a href="{% url 'category_listing' category_name=category.name %}">{{ category.name }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+{% endblock content %}

@@ -4,7 +4,7 @@
 <div id="content-wrap" class="content-wrap single video">
 	<div class="content container">
 		<div class="row">
-			<div class="post span8">
+			<div class="post span7">
 				<h1 class="post-title">{{ single_video.title }}</h1>
 				<div id="media-player" class="video-player-wrap">
 					<!-- <img src="holder.js/660x420/text:Video Player"> -->
@@ -53,7 +53,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="side span4">
+			<div class="side span5">
 				<h2 class="post-title">{{ single_video.title }}</h2>
 				<div class="description">
 					<p>{{ single_video.description }}</p>
@@ -79,12 +79,12 @@
 							<?php if(function_exists('dd_fblike_generate')){dd_fblike_generate('Like Button Count');} ?>
 							<?php if(function_exists('dd_twitter_generate')){dd_twitter_generate('Compact', 'imuxe');} ?>
 							<?php if(function_exists('dd_google1_generate')){dd_google1_generate('Compact (20px)');} ?>
-							<img src="holder.js/social/340x30/text:stats">
+							<img src="holder.js/social/480x30/text:stats">
 						</div>
 						<div class="post-comments">
 							<!-- <img src="holder.js/social/340x600/text:comments-placeholder"> -->
-							<?php comments_popup_link('0', '1', '%', 'comment-count'); ?>
-							<?php comments_template( '', true ); ?>
+							{% load fb_comments %}
+							{% fb_comments width=480 %}
 						</div>
 			</div>
 				<!-- post navigation -->

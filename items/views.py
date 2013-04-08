@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, get_list_or_404
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 
 from home.views import user_home
-from items.models import Item
+from items.models import Item, Category
 
 @login_required
 def all_list(request):
@@ -52,4 +52,19 @@ def single_doc(request, item_id):
 
 	single_doc = get_object_or_404(Item, pk=item_id, type__name='doc')
 	return render(request, 'items/single_doc.html', {'single_doc': single_doc})
+
+@login_required
+def categories(request):
+	""" """
+
+	categories = get_list_or_404(Category)
+	return render(request, 'items/categories.html', {'categories': categories})
+
+
+@login_required
+def category_listing(request, category_name):
+	""" """
+
+	items = get_list_or_404(Item, categories__name=category_name)
+	return render(request, 'items/category_listing.html', {'items': items})
 

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"cate",
+				"category_name"
+			],
+			[
+				"Ca",
+				"categories"
+			],
+			[
+				"get",
+				"get_list_or_404"
+			],
+			[
 				"I",
 				"ItemModelAdmin"
 			],
@@ -502,18 +514,6 @@
 			[
 				"di",
 				"display"
-			],
-			[
-				"sco",
-				"scroll"
-			],
-			[
-				"app",
-				"app-name"
-			],
-			[
-				"nor",
-				"no-repeat"
 			]
 		]
 	},
@@ -536,42 +536,26 @@
 			}
 		},
 		{
-			"file": "people/admin.py",
-			"settings":
-			{
-				"buffer_size": 1021,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "people/forms.py",
-			"settings":
-			{
-				"buffer_size": 7022,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "items/models.py",
 			"settings":
 			{
-				"buffer_size": 1702,
+				"buffer_size": 1977,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "items/admin.py",
+			"file": "items/views.py",
 			"settings":
 			{
-				"buffer_size": 550,
+				"buffer_size": 1897,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "home/templates/home/index.html",
+			"file": "items/templates/items/category_listing.html",
 			"settings":
 			{
-				"buffer_size": 13642,
+				"buffer_size": 302,
 				"line_ending": "Unix"
 			}
 		}
@@ -703,7 +687,7 @@
 				"View: Toggle Side Bar"
 			]
 		],
-		"width": 485.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -720,11 +704,24 @@
 	},
 	"file_history":
 	[
+		"/home/ahmad/django/mmp/items/templates/items/category_stream_box.html",
+		"/home/ahmad/www/new-huda/header.php",
+		"/home/ahmad/django/mmp/bootstrap/style.css",
 		"/home/ahmad/django/mmp/templates/base/index.html",
+		"/home/ahmad/www/new-huda/index.php",
+		"/home/ahmad/django/mmp/bootstrap/less/variables.less",
+		"/home/ahmad/django/mmp/items/templates/items/categories.html",
+		"/home/ahmad/django/mmp/items/admin.py",
+		"/home/ahmad/django/mmp/home/templates/home/index.html",
+		"/home/ahmad/django/mmp/items/urls.py",
+		"/home/ahmad/django/mmp/people/admin.py",
+		"/home/ahmad/django/mmp/.gitignore",
+		"/tmp/fz3temp-1/settings 2.py",
 		"/tmp/fz3temp-1/settings.py",
+		"/home/ahmad/django/mmp/README.md",
+		"/home/ahmad/django/mmp/people/forms.py",
 		"/home/ahmad/django/mmp/home/views.py",
 		"/home/ahmad/django/mmp/templates/admin/base_site.html",
-		"/home/ahmad/django/mmp/items/admin.py",
 		"/home/ahmad/django/mmp/items/models.py",
 		"/home/ahmad/django/mmp/mmp/settings.py",
 		"/etc/postgresql/9.1/main/pg_hba.conf",
@@ -735,14 +732,9 @@
 		"/home/ahmad/django/mmp/mmp/urls.py",
 		"/home/ahmad/django/mmp/people/templates/people/person_profile.html",
 		"/home/ahmad/django/mmp/people/models.py",
-		"/home/ahmad/django/mmp/people/forms.py",
-		"/home/ahmad/django/mmp/people/admin.py",
 		"/tmp/fz3temp-1/urls.py",
 		"/tmp/fz3temp-1/settings 3.py",
 		"/home/ahmad/django/mmp/people/views.py",
-		"/home/ahmad/django/mmp/bootstrap/style.css",
-		"/home/ahmad/django/mmp/home/templates/home/index.html",
-		"/tmp/fz3temp-1/settings 2.py",
 		"/tmp/fz3temp-1/urls 2.py",
 		"/home/ahmad/www/trending/wp-content/themes/mashable/functions.php",
 		"/home/ahmad/www/trending/wp-content/themes/mashable/index.php",
@@ -762,7 +754,6 @@
 		"/home/ahmad/django/mmp/items/templates/items/doc_list.html",
 		"/home/ahmad/django/mmp/people/templates/people/register_person.html",
 		"/home/ahmad/django/mmp/people/templates/people/login_person.html",
-		"/home/ahmad/django/mmp/items/urls.py",
 		"/home/ahmad/django/mmp/items/templates/items/audio_list.html",
 		"/home/ahmad/django/mmp/items/templates/items/video_list.html",
 		"/home/ahmad/django/mmp/items/templates/items/single_video.html",
@@ -778,7 +769,6 @@
 		"/home/ahmad/django/mmp/actions/admin.py",
 		"/home/ahmad/django/mmp/actions/models.py",
 		"/home/ahmad/django/roy/roy/settings.py",
-		"/home/ahmad/django/mmp/.gitignore",
 		"/home/ahmad/www/huda-demo/_modules/_courselistCurrent.php",
 		"/home/ahmad/www/huda-demo/less/bootstrap.css",
 		"/home/ahmad/www/huda-demo/css/bootstrap.css",
@@ -837,17 +827,11 @@
 		"/home/ahmad/www/new-huda/_modules/forbidden_msg.php",
 		"/home/ahmad/www/new-huda/_modules/_courselistFreeMembers.php",
 		"/home/ahmad/www/new-huda/content.php",
-		"/home/ahmad/www/new-huda/header.php",
 		"/home/ahmad/www/new-huda/_modules/_courselistEpisodes.php",
 		"/home/ahmad/www/new-huda/_modules/_courselistEpisodesMembers.php",
 		"/home/ahmad/www/new-huda/_modules/singleLessonPage.php",
 		"/home/ahmad/www/new-huda/_modules/_courselistMoreCoursesMembers.php",
-		"/home/ahmad/www/new-huda/_modules/_courselistFreeMembersDash.php",
-		"/home/ahmad/www/huda/new_design/html-css/about.php",
-		"/home/ahmad/www/new-huda/generate_certificate.php",
-		"/home/ahmad/www/huda/new_design/html-css/single.php",
-		"/home/ahmad/www/huda/new_design/html-css/index.php",
-		"/home/ahmad/www/huda/new_design/html-css/header.php"
+		"/home/ahmad/www/new-huda/_modules/_courselistFreeMembersDash.php"
 	],
 	"find":
 	{
@@ -866,6 +850,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"category_listing",
+			"items",
+			"doc_item",
+			"category_listing",
+			"category_name",
+			"single_doc",
+			"mmp",
+			"user",
+			"name",
 			"modal",
 			"MyModelAdmin",
 			"add",
@@ -984,16 +977,7 @@
 			"fp",
 			"uploadedfile",
 			"../upload/",
-			"login-page",
-			"home",
-			"small",
-			"extra",
-			"3",
-			"login-p",
-			"watch",
-			"dashboard",
-			"160",
-			"167p"
+			"login-page"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1013,7 +997,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1039,7 +1023,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1785.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1056,8 +1040,8 @@
 						"selection":
 						[
 							[
-								2152,
-								2152
+								250,
+								250
 							]
 						],
 						"settings":
@@ -1067,32 +1051,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1428.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "people/admin.py",
+					"file": "items/models.py",
 					"settings":
 					{
-						"buffer_size": 1021,
+						"buffer_size": 1977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								227
+								841,
+								841
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1102,108 +1085,53 @@
 				},
 				{
 					"buffer": 3,
-					"file": "people/forms.py",
+					"file": "items/views.py",
 					"settings":
 					{
-						"buffer_size": 7022,
+						"buffer_size": 1897,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								946,
-								946
+								1575,
+								1575
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "items/models.py",
+					"file": "items/templates/items/category_listing.html",
 					"settings":
 					{
-						"buffer_size": 1702,
+						"buffer_size": 302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								615,
-								615
+								193,
+								193
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1139.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "items/admin.py",
-					"settings":
-					{
-						"buffer_size": 550,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "home/templates/home/index.html",
-					"settings":
-					{
-						"buffer_size": 13642,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10217,
-								10263
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4528.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1282,7 +1210,7 @@
 		[
 			[
 				"",
-				"/home/ahmad/django/hs/home_school.sublime-project"
+				"/home/ahmad/www/nokhbah/nokhbah.sublime-project"
 			]
 		],
 		"width": 380.0

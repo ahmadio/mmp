@@ -10,4 +10,6 @@ urlpatterns = patterns('',
 	url(r'^video/(?P<item_id>\d+)/$', views.single_video, name='single_video'),
 	url(r'^audio/(?P<item_id>\d+)/$', views.single_audio, name='single_audio'),
 	url(r'^doc/(?P<item_id>\d+)/$', views.single_doc, name='single_doc'),
+	url(r'^category/$', views.categories, name='categories'),
+	url(r'^category/(?P<category_name>\w+)/$', views.category_listing, name='category_listing'),
 	)

@@ -1,31 +1,31 @@
-{% if video_items|length > 0 %}
+{% if items|length > 0 %}
 <ul class="thumbnails">
-	{% for video_item in video_items %}
-	<li class="span3 {{ video_item.type.name }}-item">
+	{% for item in items %}
+	<li class="span3 {{ item.type.name }}-item">
 		<div class="thumbnail stream-box">
-			<a href="{% url 'single_video' item_id=video_item.id %}">
+			<a href="">
 				<img class="stream-box-thumb" src="holder.js/270x200"/>
 			</a>
 			<div class="summary">
-				<h1>{{ video_item.title }}</h1>
+				<h1>{{ item.title }}</h1>
 				<p class="description">
-					{{ video_item.description }}
+					{{ item.description }}
 				</p>
 			</div>
 			<div class="author-meta clearfix">
 				<div class="author-avatar-wrap pull-left">
-					<a href="{% url 'person_profile' person_id=video_item.author.id %}">
+					<a href="{% url 'person_profile' person_id=item.author.id %}">
 						<img class="person-avatar-mini-thumb" src="holder.js/30x30/social/text:avatar" alt="" width="30" height="30"/>
 					</a>
 				</div>
 				<div class="pull-left meta-links">
 					<!-- <span>by</span> -->
-					<a href="{% url 'person_profile' person_id=video_item.author.id %}"><strong>{{ video_item.author.username }}</strong></a>
+					<a href="{% url 'person_profile' person_id=item.author.id %}"><strong>{{ item.author.username }}</strong></a>
 					<span>on</span>
 					<span><a href=""><strong>category</strong></a></span>
 				</div>
 				<p class="time-info">
-					{{ video_item.creation_date|timesince }}
+					{{ item.creation_date|timesince }}
 					<span> | comments</span>
 				</p>
 			</div>
@@ -35,7 +35,6 @@
 	</li>
 	{% endfor %}
 </ul>
-<a href="{% url 'video_list' %}">Load more...</a>
 {% else %}
 <i class="well">There is nothing here to display!</i>
 {% endif %}
